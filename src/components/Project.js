@@ -22,14 +22,14 @@ let projects = [
     {
         imgSrc: Crud_img,
         name: "CRUD",
-        demo: ``,
+        demo: `https://eloquent-gates-57e1e2.netlify.app`,
         desc: "A CRUD App made using React Hooks, Axios & Mock-api"
     },
 
     {
         imgSrc: Football_img,
         name: "Football",
-        demo: ``,
+        demo: `https://boring-easley-cf55b7.netlify.app`,
         desc: "A demo website made using HTML,CSS & React JS"
     }
 ];

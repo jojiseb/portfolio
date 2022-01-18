@@ -7,11 +7,9 @@ class ProjectItem extends Component
     {
         return(
                 <div className='row'>
-                    <br></br>
                         {projects.map((project) => {
                             return (
                                 <div className='card-container'>
-                                    <br></br><br></br>
                                     <div className='image-container'>
                                         <img src={project.imgSrc} alt='Empty'/>
                                     </div>
@@ -23,6 +21,7 @@ class ProjectItem extends Component
                                             <p>{project.desc}</p>
                                         </div>
                                     </div>
+                                    <br></br>
                                     <div className='btn'>
                                         <button>
                                             <a style={{color: "black"}} href={project.demo} target='_blank' rel="noreferrer">
@@ -30,7 +29,6 @@ class ProjectItem extends Component
                                             </a>
                                         </button>
                                     </div>
-                                    <br></br>
                                 </div>
                             );
                         })}

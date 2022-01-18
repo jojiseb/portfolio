@@ -196,28 +196,32 @@ h1,h2,h3,h4,p
 {
   width: 300px;
   overflow: hidden;
-  box-shadow: 0px 0px 15px -5px;
-  transition: 0.3s;
+  box-shadow: 0px 0px 14px -4px;
+  transition: 0.5s;
   animation: ease-in;
   margin-bottom: 20px;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
 }
 
 .card-container:hover
 {
-  transform: scale(1.0);
-  box-shadow: 0px 0px 15px -5px;
+  transform: scale(1.1);
 }
 
 .image-container img
 {
   overflow: hidden;
   height: 200px;
+  object-fit: contain;
+  padding-left: 0px;
 }
 
 .card-content
 {
   margin: 1rem;
   margin-top: 0.5rem;
+  margin-bottom: 0rem;
 }
 
 h3,p 
@@ -252,12 +256,14 @@ h3,p
   background: rgba(27, 156, 252, 0.1);
 }
 
+
 /* Float four columns side by side */
 .card-container {
   float: left;
   width: 35%;
   padding: 0 10px;
   margin: 20px;
+  cursor: pointer;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -278,5 +284,6 @@ h3,p
     margin-bottom: 20px;
   }
 }
+
 
 
