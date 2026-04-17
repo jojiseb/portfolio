@@ -1,17 +1,13 @@
-import React , {Component} from 'react';
+import React from 'react';
 import ProjectItem from '../components/ProjectItem';
 
-class Projects extends Component
-{
-    render()
-    {
-        return(
-                 <div className='condiv'>
-                    <h1>Projects</h1>
-                            <ProjectItem/>
-                </div>
-        );
-    }
+function Projects() {
+  return (
+    <section id="projects">
+      <p className="section-label">Projects</p>
+      <ProjectItem />
+    </section>
+  );
 }
 
 export default Projects;

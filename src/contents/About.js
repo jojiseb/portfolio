@@ -1,33 +1,28 @@
-import React, {Component} from 'react';
-import Widecard from '../components/Widecard';
+import React from 'react';
 
-class About extends Component
-{
-    render()
-    {
-        return(
-            <div className='condiv'>
-                <h1 className='subtopic'>About Me</h1>
-                <h4>Hey there,</h4>
-                <h1>I'm Joji Sebastian</h1>
-                <h3>Full Stack Web Developer</h3>
-                <br></br>
-
-                <p>I started my journey in the world of computers
-                    from an young age, now I'm 24 years old, completed
-                    my Engineering Degree in Computer Science from 
-                    Mangalam College of Engineering. 
-                                            As someone who was always
-                    fond of building things, Web development is my area
-                    of interest. 
-                </p>
-                <br></br>
-                <h1 className='subtopic'>My Education</h1>
-                <Widecard title="B.Tech Computer Science Engineering" where="KTU University" from="August 2015" to="August 2019"/>
-                <Widecard title="SSLC | HSC" where="Mary Mount Public School" from="2013" to="2015"/>
-            </div>
-        );
-    }
+function About() {
+  return (
+    <section id="about">
+      <p className="section-label">About</p>
+      <p className="about-bio">
+        Hey — I'm Joji, a backend engineer based in India. I started tinkering with computers
+        early on and turned that curiosity into a career building things for the web. I care about
+        clean code, intuitive UX, and products that actually work.
+      </p>
+      <div className="edu-grid">
+        <div className="edu-card">
+          <h3>B.Tech — Computer Science Engineering</h3>
+          <p>KTU University · Mangalam College of Engineering</p>
+          <p>August 2015 – August 2019</p>
+        </div>
+        <div className="edu-card">
+          <h3>SSLC &amp; HSC</h3>
+          <p>Mary Mount Public School</p>
+          <p>2013 – 2015</p>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default About;

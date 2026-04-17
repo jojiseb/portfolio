@@ -1,19 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Social from '../components/Social';
 
-class Contact extends Component
-{
-    render()
-    {
-        return(
-            <div className='condiv'>
-                <h1 className='subtopic'>Contact Me</h1>
-                <h3>Email : joji.s1997@gmail.com</h3>
-                <h3>Instagram : @joji_seb</h3>
-                <Social/>
-            </div>
-        );
-    }
+function Contact() {
+  return (
+    <section id="contact">
+      <p className="section-label">Contact</p>
+      <p className="contact-blurb">
+        Have a project in mind, want to collaborate, or just want to say hi?
+        My inbox is always open.
+      </p>
+      <a className="contact-email" href="mailto:joji.s1997@gmail.com">
+        joji.s1997@gmail.com ↗
+      </a>
+      <Social className="contact-socials" />
+    </section>
+  );
 }
 
-export default Contact; 
+export default Contact;

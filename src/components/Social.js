@@ -1,23 +1,23 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Social extends Component
-{
-    render() 
-    {
-        return(
-            <div className='social'>
+const links = [
+  { label: 'GitHub',    icon: 'fab fa-github',      href: 'https://github.com/jojiseb' },
+  { label: 'LinkedIn',  icon: 'fab fa-linkedin-in',  href: 'https://linkedin.com/in/joji-sebastian' },
+  { label: 'Instagram', icon: 'fab fa-instagram',   href: 'https://instagram.com/joji_seb' },
+  { label: 'Facebook',  icon: 'fab fa-facebook-f',  href: 'https://www.facebook.com/jiseb.5ag97' },
+];
 
-            <a href="https://github.com/jojiseb" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-
-            <a href="https://Instagram.com/joji_seb" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-
-            <a href="https://www.facebook.com/jiseb.5ag97" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
-
-            <a href="https://Linkedin.com/in/joji-sebastian" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
-            
-            </div>
-        );
-    }
+function Social({ className = 'home-socials' }) {
+  return (
+    <div className={className}>
+      {links.map(({ label, icon, href }) => (
+        <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+          <i className={icon}></i>
+          <span>{label}</span>
+        </a>
+      ))}
+    </div>
+  );
 }
 
 export default Social;
