@@ -9,7 +9,7 @@ function Home() {
     <section id="home" className="home-layout">
       <div className="home-text">
         <p className="home-greeting">Hey there, welcome — glad you stopped by.</p>
-        <p className="home-eyebrow">Backend Engineer</p>
+        <p className="home-eyebrow">Senior Backend Engineer</p>
         <h1 className="home-title">Joji Sebastian.</h1>
         <p className="home-subtitle">
           Product-minded backend engineer with an eye for UX. I build reliable,

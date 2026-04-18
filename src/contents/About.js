@@ -5,15 +5,16 @@ function About() {
     <section id="about">
       <p className="section-label">About</p>
       <p className="about-bio">
-        Hey — I'm Joji, a backend engineer based in India. I started tinkering with computers
-        early on and turned that curiosity into a career building things for the web. I care about
-        clean code, intuitive UX, and products that actually work.
+        Hey — I'm Joji, a backend engineer based in Kottayam, Kerala, India.
+        I started tinkering with computers early on and turned that curiosity into
+        4+ years of building production backend systems. I care about performance,
+        reliability, and the product decisions that sit behind every API.
       </p>
       <div className="edu-grid">
         <div className="edu-card">
           <h3>B.Tech — Computer Science Engineering</h3>
-          <p>KTU University · Mangalam College of Engineering</p>
-          <p>August 2015 – August 2019</p>
+          <p>APJ Abdul Kalam Technological University</p>
+          <p>2015 – 2019</p>
         </div>
         <div className="edu-card">
           <h3>SSLC &amp; HSC</h3>

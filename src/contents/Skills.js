@@ -1,10 +1,11 @@
 import React from 'react';
 
 const skillGroups = [
-  { label: 'Backend',         items: ['Java', 'Spring Boot', 'REST APIs'] },
+  { label: 'Languages',       items: ['Java', 'JavaScript'] },
+  { label: 'Backend',         items: ['Spring Boot', 'Spring Data JPA', 'Spring Security', 'REST APIs'] },
   { label: 'Databases',       items: ['MySQL', 'MongoDB', 'Redis'] },
-  { label: 'DevOps & Cloud',  items: ['AWS', 'Jenkins', 'Docker'] },
-  { label: 'Version Control', items: ['Git', 'GitHub', 'GitLab'] },
+  { label: 'Cloud & DevOps',  items: ['AWS (EC2, Cognito)', 'Docker', 'Jenkins', 'Git', 'GitHub'] },
+  { label: 'Engineering',     items: ['System Design', 'DSA', 'Performance Optimization', 'Root-Cause Analysis'] },
   { label: 'IDEs',            items: ['IntelliJ IDEA', 'VS Code', 'Eclipse'] },
 ];
 

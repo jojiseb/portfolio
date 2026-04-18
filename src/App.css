@@ -175,8 +175,8 @@ section { padding: 64px 0; }
 }
 .home-layout {
   display: grid;
-  grid-template-columns: 1fr 380px;
-  gap: 60px;
+  grid-template-columns: 1fr 220px;
+  gap: 48px;
   align-items: center;
 }
 .home-photo-wrap {
@@ -189,7 +189,7 @@ section { padding: 64px 0; }
   object-position: top;
   border-radius: 14px;
   display: block;
-  filter: grayscale(15%);
+  filter: none;
 }
 @media (max-width: 780px) {
   .home-layout {
@@ -362,6 +362,27 @@ section { padding: 64px 0; }
 .work-company { font-size: 1rem; font-weight: 600; margin-bottom: 3px; }
 .work-role { font-size: 0.82rem; color: var(--accent); font-weight: 500; margin-bottom: 10px; }
 .work-note { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+.work-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.work-bullets li {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  padding-left: 14px;
+  position: relative;
+}
+.work-bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+  top: 3px;
+}
 @media (max-width: 640px) {
   .work-item { grid-template-columns: 1fr; gap: 8px; }
 }
